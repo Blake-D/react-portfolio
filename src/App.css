@@ -27,7 +27,7 @@
 
 .first-name p{
   font-size: 30vh;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -65,13 +65,11 @@
  .last-name{
   padding-top: 10vh;
   height: 100px;
-  /* overflow: hidden; */
-  /* position: relative; */
 }
 
 .last-name p{
   font-size: 30vh;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   margin: 0;
