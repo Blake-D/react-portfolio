@@ -1,7 +1,7 @@
 #portrait{
   box-shadow: -10px 5px 5px gray;
   border-radius: 25px;
-  width: 75%;
+  width: 35vw;
   height: auto;
   position: relative;
 }
@@ -13,15 +13,25 @@
 }
 
 #about-container{
-  background-image: url("./images/ribbons.png");
-  background-size: 100% auto;
+  /* background-image: url("./images/ribbons.png");
+  background-size: 100% auto; */
   border: 3px solid #fff;
-  padding: 20px;
+  padding-left: 2vw;
   display: flex;
+  padding-top: 0;
+}
+
+#about-me{
+  font-size: 4vh;
+  text-align: justify;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  /* padding-top: 16vh; */
 }
 
 .first-name{
   padding-top: 10vh;
+  padding-right: 2vw;
   height: 100px;
 }
 
@@ -64,6 +74,7 @@
 
  .last-name{
   padding-top: 10vh;
+  padding-right: 2vw;
   height: 100px;
 }
 
@@ -105,6 +116,9 @@
  }
 
  .fade-in{
+  padding-left: 2vw;
+  font-size: 5vh;
+  padding-bottom: 0vh;
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 10s;
   -moz-animation: fadeIn ease 10s;

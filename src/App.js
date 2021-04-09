@@ -14,6 +14,7 @@ function App() {
       <div className="fade-in">
         <p id="blurb">software engineer | game developer | audio artist</p>
       </div>
+      <div id="ribbon"></div>
       <div id="about-container">
         <div id="left">
           <img id="portrait" src={Portrait}></img>
