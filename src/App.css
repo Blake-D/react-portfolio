@@ -29,6 +29,13 @@
   /* padding-top: 16vh; */
 }
 
+#tech-stacks{
+  font-size: 4vmin;
+  text-align: left;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
 .first-name{
   padding-top: 10vh;
   padding-right: 2vw;
@@ -283,4 +290,27 @@
   100% {
     opacity:1;
   }
+}
+
+.icon{
+  height: 8vmin;
+  width: auto;
+}
+
+#link-icons{
+  width: 49%;
+  border: 3px solid #fff;
+  padding-left: 2vw;
+  display: flex;
+  padding-top: 0;
+}
+
+#icon-left{
+  text-align: left;
+  float: left;
+}
+
+#icon-right{
+  text-align: right;
+  float: right;
 }
