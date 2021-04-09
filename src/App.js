@@ -1,13 +1,28 @@
-import './App.css'
 import Portrait from './images/portrait.jpg'
 import Resume from './Blake_DeGraw_resume.pdf'
 import LinkedIn from './images/linkedin_icon.png'
 import GitHub from './images/github_icon.png'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper'
+import './App.css'
+import 'swiper/swiper-bundle.css'
+import React from 'react'
+
+SwiperCore.use([Navigation, Pagination, EffectCube])
 
 function App() {
 
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+  }
+
+  const slides = []
+  for (let i = 0; i < 5; i++) {
+    slides.push(
+      <SwiperSlide key={`slide-${i}`}>
+        <img src={`https://picsum.photos/id/${i + 1}/500/300`} style={{ listStyle: 'none' }} alt={`Slide ${i}`} />
+      </SwiperSlide>
+    )
   }
 
   return (
@@ -27,10 +42,10 @@ function App() {
           <img id="portrait" src={Portrait} alt="portrait of Blake"></img><br></br>
           <div id="link-icons">
             <div id="icon-left">
-              <a href="https://www.linkedin.com/in/blake-degraw/" target="_blank" rel="noreferrer"><img className="icon" src={LinkedIn} alt="linkedIn icon"/></a>
+              <a href="https://www.linkedin.com/in/blake-degraw/" target="_blank" rel="noreferrer"><img className="icon" src={LinkedIn} alt="linkedIn icon" /></a>
             </div>
             <div id="icon-right">
-              <a href="https://github.com/Blake-D" target="_blank" rel="noreferrer"><img className="icon" src={GitHub} alt="GitHub icon"/></a>
+              <a href="https://github.com/Blake-D" target="_blank" rel="noreferrer"><img className="icon" src={GitHub} alt="GitHub icon" /></a>
             </div>
           </div>
         </div>
@@ -49,6 +64,19 @@ function App() {
             SQL <b>|</b> PostgreSQL <b>|</b> Sequelize <b>|</b> MongoDB <b>|</b> Mongoose <b>|</b> Atlas
           </div>
         </div>
+      </div>
+      <div id="cube">
+        <React.Fragment>
+          <Swiper id="main"
+            tag="section"
+            navigation
+            pagination
+            effect="cube"
+            spaceBetween={0}
+            slidesPerView={1}>
+            {slides}
+          </Swiper>
+        </React.Fragment>
       </div>
     </>
   );
