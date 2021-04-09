@@ -3,6 +3,11 @@ import Portrait from './images/portrait.jpg'
 import Resume from './Blake_DeGraw_resume.pdf'
 
 function App() {
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <div className="first-name">
