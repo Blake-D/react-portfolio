@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Portrait from './images/portrait.jpg'
 import Resume from './Blake_DeGraw_resume.pdf'
 import LinkedIn from './images/linkedin_icon.png'
@@ -7,6 +8,8 @@ import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper'
 import './App.css'
 import 'swiper/swiper-bundle.css'
 import React from 'react'
+import Oscillator from './components/Oscillator'
+import Rickipedia from './components/Rickipedia'
 
 SwiperCore.use([Navigation, Pagination, EffectCube])
 
@@ -17,10 +20,12 @@ function App() {
   }
 
   const slides = []
-  for (let i = 0; i < 5; i++) {
+  const slideViews = [<Oscillator/>, <Rickipedia/>]
+  for (let i = 0; i < 2; i++) {
     slides.push(
-      <SwiperSlide key={`slide-${i}`}>
-        <img src={`https://picsum.photos/id/${i + 1}/500/300`} style={{ listStyle: 'none' }} alt={`Slide ${i}`} />
+      <SwiperSlide className="slider"
+      key={`slide-${i}`}>
+        {slideViews[i]}
       </SwiperSlide>
     )
   }
@@ -68,10 +73,10 @@ function App() {
       <div id="cube">
         <React.Fragment>
           <Swiper id="main"
-            tag="section"
             navigation
             pagination
             effect="cube"
+            loop={true}
             spaceBetween={0}
             slidesPerView={1}>
             {slides}
@@ -79,7 +84,7 @@ function App() {
         </React.Fragment>
       </div>
     </>
-  );
+  )
 }
 
 export default App
