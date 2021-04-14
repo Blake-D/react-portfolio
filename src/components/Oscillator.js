@@ -3,7 +3,7 @@ import React from 'react'
 function Oscillator(){
     return(
         <div>
-            <h1>oscillator sanity</h1>
+            <h1>Web Oscillator</h1>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+// import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Portrait from './images/portrait.jpg'
 import Resume from './Blake_DeGraw_resume.pdf'
 import LinkedIn from './images/linkedin_icon.png'
@@ -10,6 +10,10 @@ import 'swiper/swiper-bundle.css'
 import React from 'react'
 import Oscillator from './components/Oscillator'
 import Rickipedia from './components/Rickipedia'
+import Showdown from './components/Showdown'
+import Prodrome from './components/Prodrome'
+import Escape from './components/Escape'
+import BioPlunge from './components/BioPlunge'
 
 SwiperCore.use([Navigation, Pagination, EffectCube])
 
@@ -20,11 +24,10 @@ function App() {
   }
 
   const slides = []
-  const slideViews = [<Oscillator/>, <Rickipedia/>]
-  for (let i = 0; i < 2; i++) {
+  const slideViews = [<Oscillator/>, <Rickipedia/>, <Showdown/>, <Prodrome/>, <Escape/>, <BioPlunge/>]
+  for (let i = 0; i < 6; i++){
     slides.push(
-      <SwiperSlide className="slider"
-      key={`slide-${i}`}>
+      <SwiperSlide className="slider" key={`slide-${i}`}>
         {slideViews[i]}
       </SwiperSlide>
     )
@@ -76,7 +79,7 @@ function App() {
             navigation
             pagination
             effect="cube"
-            loop={true}
+            // loop={true}
             spaceBetween={0}
             slidesPerView={1}>
             {slides}
