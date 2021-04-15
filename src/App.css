@@ -13,12 +13,13 @@
 }
 
 .screenshot{
-  height: 40vmin;
-  width: 75vmin;
+  height: 60vmin;
+  width: 112.5vmin;
 }
 
 .cube-div{
   text-align: center;
+  display: inline-block;
 }
 
 .icon{
@@ -39,6 +40,7 @@
 
 #main{
   width: 80vw;
+  height: auto;
   margin-left: 10vw;
 }
 
