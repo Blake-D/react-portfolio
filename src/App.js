@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <>
+    <body>
       <div className="first-name">
         <p>Blake</p>
       </div>
@@ -88,8 +88,9 @@ function App() {
         <React.Fragment>
           <Swiper id="main"
             navigation
-            pagination
+            // pagination
             effect="cube"
+            shadow={false}
             // loop={true}
             spaceBetween={0}
             slidesPerView={1}>
@@ -102,7 +103,7 @@ function App() {
         <React.Fragment>
           <Swiper id="main"
             navigation
-            pagination
+            // pagination
             effect="cube"
             // loop={true}
             spaceBetween={0}
@@ -111,7 +112,7 @@ function App() {
           </Swiper>
         </React.Fragment>
       </div>
-    </>
+    </body>
   )
 }
 

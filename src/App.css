@@ -1,3 +1,8 @@
+body{
+  background-color: black;
+  color: white;
+}
+
 /* Classes */
 
 .cube-title{
@@ -36,6 +41,10 @@
   padding-inline-start: 0;
 }
 
+.about{
+  font-size: 3vmin;
+}
+
 /* ID's */
 
 #main{
@@ -46,7 +55,6 @@
 
 #link-icons{
   width: 49%;
-  border: 3px solid #fff;
   padding-left: 2vw;
   display: flex;
   padding-top: 0;
@@ -89,9 +97,6 @@
 }
 
 #about-container{
-  /* background-image: url("./images/ribbons.png");
-  background-size: 100% auto; */
-  border: 3px solid #fff;
   padding-left: 2vw;
   display: flex;
   padding-top: 0;
@@ -125,7 +130,8 @@
 
 /* Fonts */
 
-.eurostile{
+/* .eurostile{
+  color: white;
   font-family: 'Eurostile LT Std';
   color: black;
 }
@@ -133,7 +139,7 @@
 @font-face {
   font-family: 'Eurostile LT Std';
   src: url("EurostileLTStd-BoldEx2.otf");
-}
+} */
 
 #schwifty{
   font-family: 'GetSchwifty';
