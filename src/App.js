@@ -23,12 +23,22 @@ function App() {
     window.scrollTo(0, 0);
   }
 
-  const slides = []
-  const slideViews = [<Oscillator/>, <Rickipedia/>, <Showdown/>, <Prodrome/>, <Escape/>, <BioPlunge/>]
-  for (let i = 0; i < 6; i++){
-    slides.push(
+  const slides1 = []
+  const slideViews1 = [<Oscillator/>, <Rickipedia/>, <Showdown/>]
+  for (let i = 0; i < 3; i++){
+    slides1.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
-        {slideViews[i]}
+        {slideViews1[i]}
+      </SwiperSlide>
+    )
+  }
+
+  const slides2 = []
+  const slideViews2 = [<Prodrome/>, <Escape/>, <BioPlunge/>]
+  for (let i = 0; i < 3; i++){
+    slides2.push(
+      <SwiperSlide className="slider" key={`slide-${i}`}>
+        {slideViews2[i]}
       </SwiperSlide>
     )
   }
@@ -73,7 +83,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="cube">
+      <div id="cube-1">
         <React.Fragment>
           <Swiper id="main"
             navigation
@@ -82,7 +92,20 @@ function App() {
             // loop={true}
             spaceBetween={0}
             slidesPerView={1}>
-            {slides}
+            {slides1}
+          </Swiper>
+        </React.Fragment>
+      </div>
+      <div id="cube-2">
+        <React.Fragment>
+          <Swiper id="main"
+            navigation
+            pagination
+            effect="cube"
+            // loop={true}
+            spaceBetween={0}
+            slidesPerView={1}>
+            {slides2}
           </Swiper>
         </React.Fragment>
       </div>

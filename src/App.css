@@ -347,7 +347,12 @@
   float: right;
 }
 
-#cube{
+#cube-1{
+  padding-left: 33vw;
+  width: 500px;
+}
+
+#cube-2{
   padding-left: 33vw;
   width: 500px;
 }
