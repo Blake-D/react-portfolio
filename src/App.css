@@ -1,6 +1,15 @@
+a{
+  color: gold;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 body{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: rgb(53, 53, 58);
 }
 
 /* Classes */
@@ -47,6 +56,11 @@ body{
 
 /* ID's */
 
+#nav{
+  font-size: 4vmin;
+  padding-left: 2vw;
+}
+
 #main{
   width: 80vw;
   height: auto;
@@ -72,14 +86,13 @@ body{
 
 #cube-1{
   text-align: center;
-  /* padding-left: 33vw; */
   width: 500px;
 }
 
 #cube-2{
   text-align: center;
-  /* padding-left: 33vw; */
   width: 500px;
+  margin-bottom: 10vh;
 }
 
 #portrait{
@@ -112,7 +125,7 @@ body{
 
 #tech-stacks{
   font-size: 4vmin;
-  text-align: left;
+  text-align: right;
   padding-left: 2vw;
   padding-right: 2vw;
 }
@@ -129,7 +142,12 @@ body{
  }
 
 #footer{
-  background-color: blue;
+  width: 100vw;
+  text-align: center;
+}
+
+#contact-info{
+  color: white;
 }
 
 /* Fonts */
