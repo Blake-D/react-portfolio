@@ -1,8 +1,11 @@
 /* Classes */
 
 .cube-title{
+  font-weight: bold;
   font-size: 10vmin;
-  height: 10vmin;
+  width: 100vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 .two-d{
@@ -35,7 +38,8 @@
 /* ID's */
 
 #main{
-  width: 90vw;
+  width: 80vw;
+  padding-left: 5vw;
 }
 
 #link-icons{
