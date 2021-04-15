@@ -4,7 +4,7 @@
   font-weight: bold;
   font-size: 10vmin;
   width: 100vw;
-  margin-top: 3vh;
+  margin-top: 10vh;
   margin-bottom: 3vh;
 }
 
@@ -39,7 +39,7 @@
 
 #main{
   width: 80vw;
-  padding-left: 5vw;
+  margin-left: 10vw;
 }
 
 #link-icons{
