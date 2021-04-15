@@ -1,8 +1,6 @@
 // import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Portrait from './images/portrait.jpg'
 import Resume from './Blake_DeGraw_resume.pdf'
-import LinkedIn from './images/linkedin_icon.png'
-import GitHub from './images/github_icon.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper'
 import './App.css'
@@ -14,6 +12,8 @@ import Showdown from './components/Showdown'
 import Prodrome from './components/Prodrome'
 import Escape from './components/Escape'
 import BioPlunge from './components/BioPlunge'
+import Header from './partials/Header'
+import Footer from './partials/Footer'
 
 SwiperCore.use([Navigation, Pagination, EffectCube])
 
@@ -45,6 +45,7 @@ function App() {
 
   return (
     <body>
+      <Header/>
       <div className="first-name">
         <p>Blake</p>
       </div>
@@ -58,14 +59,6 @@ function App() {
       <div id="about-container">
         <div id="left">
           <img id="portrait" src={Portrait} alt="portrait of Blake"></img><br></br>
-          <div id="link-icons">
-            <div id="icon-left">
-              <a href="https://www.linkedin.com/in/blake-degraw/" target="_blank" rel="noreferrer"><img className="icon" src={LinkedIn} alt="linkedIn icon" /></a>
-            </div>
-            <div id="icon-right">
-              <a href="https://github.com/Blake-D" target="_blank" rel="noreferrer"><img className="icon" src={GitHub} alt="GitHub icon" /></a>
-            </div>
-          </div>
         </div>
         <div id="right">
           <div id="about-me">
@@ -112,6 +105,7 @@ function App() {
           </Swiper>
         </React.Fragment>
       </div>
+      <Footer/>
     </body>
   )
 }
