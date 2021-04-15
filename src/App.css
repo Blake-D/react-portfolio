@@ -347,21 +347,13 @@
   float: right;
 }
 
-#cube-container {
-  padding: 20px;
-  display: flex;
-  text-align: center;
-}
-
 #cube-1{
-  float: left;
-  /* padding-left: 33vw; */
+  padding-left: 33vw;
   width: 500px;
 }
 
 #cube-2{
-  float: right;
-  /* padding-left: 33vw; */
+  padding-left: 33vw;
   width: 500px;
 }
 
