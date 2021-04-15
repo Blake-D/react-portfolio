@@ -84,6 +84,7 @@ function App() {
         </div>
       </div>
       <div id="cube-1">
+        <p><b className="cube-title">Apps</b></p>
         <React.Fragment>
           <Swiper id="main"
             navigation
@@ -97,6 +98,7 @@ function App() {
         </React.Fragment>
       </div>
       <div id="cube-2">
+        <p><b className="cube-title">Video Games</b></p>
         <React.Fragment>
           <Swiper id="main"
             navigation

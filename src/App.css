@@ -1,5 +1,10 @@
 /* Classes */
 
+.cube-title{
+  font-size: 10vmin;
+  height: 10vmin;
+}
+
 .two-d{
   font-family: 'Press Start 2P', monospace;
 }
@@ -48,11 +53,13 @@
 }
 
 #cube-1{
+  text-align: center;
   padding-left: 33vw;
   width: 500px;
 }
 
 #cube-2{
+  text-align: center;
   padding-left: 33vw;
   width: 500px;
 }
