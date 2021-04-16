@@ -74,6 +74,13 @@ body{
   margin-left: 10vw;
 }
 
+#main-2{
+  width: 80vw;
+  height: auto;
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+
 #link-icons{
   width: 49%;
   padding-left: 2vw;

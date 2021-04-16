@@ -10,8 +10,11 @@ import RickText from './components/RickText'
 import Showdown from './components/Showdown'
 import ShowdownText from './components/ShowdownText'
 import Prodrome from './components/Prodrome'
+import ProText from './components/ProText'
 import Escape from './components/Escape'
+import EscapeText from './components/EscapeText'
 import BioPlunge from './components/BioPlunge'
+import BioText from './components/BioText'
 import Portrait from './images/portrait.jpg'
 import LinkedIn from './images/linkedin_icon.png'
 import GitHub from './images/github_icon.png'
@@ -27,6 +30,8 @@ function App() {
 
   const [firstSwiper, setFirstSwiper] = useState(null)
   const [secondSwiper, setSecondSwiper] = useState(null)
+  const [thirdSwiper, setThirdSwiper] = useState(null)
+  const [fourthSwiper, setFourthSwiper] = useState(null)
 
   const appPics = []
   const appPicViews = [<Oscillator />, <Rickipedia />, <Showdown />]
@@ -48,12 +53,22 @@ function App() {
     )
   }
 
-  const slides2 = []
-  const slideViews2 = [<Prodrome />, <Escape />, <BioPlunge />]
+  const gamePics = []
+  const gamePicViews = [<Prodrome />, <Escape />, <BioPlunge />]
   for (let i = 0; i < 3; i++) {
-    slides2.push(
+    gamePics.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
-        {slideViews2[i]}
+        {gamePicViews[i]}
+      </SwiperSlide>
+    )
+  }
+
+  const gameTexts = []
+  const gameTextViews = [<ProText />, <EscapeText />, <BioText />]
+  for (let i = 0; i < 3; i++) {
+    gameTexts.push(
+      <SwiperSlide className="slider" key={`slide-${i}`}>
+        {gameTextViews[i]}
       </SwiperSlide>
     )
   }
@@ -106,7 +121,7 @@ function App() {
             {appPics}
           </Swiper>
           <Swiper 
-            id="main" 
+            id="main-2" 
             onSwiper={setSecondSwiper}
             controller={{ control: firstSwiper }}
             spaceBetween={0}
@@ -119,11 +134,21 @@ function App() {
         <p className="cube-title">Video Games</p>
         <React.Fragment>
           <Swiper id="main"
+            onSwiper={setThirdSwiper}
+            controller={{ control: fourthSwiper }}
             navigation
             effect="cube"
             spaceBetween={0}
             slidesPerView={1}>
-            {slides2}
+            {gamePics}
+          </Swiper>
+          <Swiper 
+            id="main-2" 
+            onSwiper={setFourthSwiper}
+            controller={{ control: thirdSwiper }}
+            spaceBetween={0}
+            slidesPerView={1}>
+            {gameTexts}
           </Swiper>
         </React.Fragment>
       </div>
