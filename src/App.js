@@ -86,7 +86,7 @@ function App() {
             cubeEffect={{
               shadow: true,
               slideShadows: true,
-              shadowOffset: 20,
+              shadowOffset: 0,
               shadowScale: 0.94,
             }}
             // loop={true}
@@ -106,7 +106,7 @@ function App() {
             cubeEffect={{
               shadow: true,
               slideShadows: true,
-              shadowOffset: 20,
+              shadowOffset: 0,
               shadowScale: 0.94,
             }}
             // loop={true}

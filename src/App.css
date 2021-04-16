@@ -1,5 +1,6 @@
 a{
-  color: gold;
+  color: rgb(79, 79, 83);
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -9,10 +10,14 @@ a:hover{
 
 body{
   background-color: white;
-  color: rgb(53, 53, 58);
+  color: rgb(79, 79, 83);
 }
 
 /* Classes */
+
+.cube-link{
+  color: black;
+}
 
 .cube-title{
   font-weight: bold;
@@ -52,6 +57,7 @@ body{
 
 .about{
   font-size: 3vmin;
+  color: black;
 }
 
 /* ID's */
@@ -146,22 +152,20 @@ body{
   text-align: center;
 }
 
-#contact-info{
-  color: white;
-}
+/* #contact-info{
+  color: gold;
+} */
 
 /* Fonts */
 
-/* .eurostile{
-  color: white;
+.eurostile{
   font-family: 'Eurostile LT Std';
-  color: black;
 }
 
 @font-face {
   font-family: 'Eurostile LT Std';
   src: url("EurostileLTStd-BoldEx2.otf");
-} */
+}
 
 #schwifty{
   font-family: 'GetSchwifty';
