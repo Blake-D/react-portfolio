@@ -1,20 +1,23 @@
-import Portrait from './images/portrait.jpg'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper'
+import SwiperCore, { Navigation, EffectCube, Controller } from 'swiper'
 import './App.css'
 import 'swiper/swiper-bundle.css'
-import React from 'react'
 import Oscillator from './components/Oscillator'
+import OscText from './components/OscText'
 import Rickipedia from './components/Rickipedia'
+import RickText from './components/RickText'
 import Showdown from './components/Showdown'
+import ShowdownText from './components/ShowdownText'
 import Prodrome from './components/Prodrome'
 import Escape from './components/Escape'
 import BioPlunge from './components/BioPlunge'
+import Portrait from './images/portrait.jpg'
 import LinkedIn from './images/linkedin_icon.png'
 import GitHub from './images/github_icon.png'
 import Resume from './Blake_DeGraw_resume.pdf'
 
-SwiperCore.use([Navigation, Pagination, EffectCube])
+SwiperCore.use([Navigation, EffectCube, Controller])
 
 function App() {
 
@@ -22,12 +25,25 @@ function App() {
     window.scrollTo(0, 0);
   }
 
-  const slides1 = []
-  const slideViews1 = [<Oscillator />, <Rickipedia />, <Showdown />]
+  const [firstSwiper, setFirstSwiper] = useState(null)
+  const [secondSwiper, setSecondSwiper] = useState(null)
+
+  const appPics = []
+  const appPicViews = [<Oscillator />, <Rickipedia />, <Showdown />]
   for (let i = 0; i < 3; i++) {
-    slides1.push(
+    appPics.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
-        {slideViews1[i]}
+        {appPicViews[i]}
+      </SwiperSlide>
+    )
+  }
+
+  const appTexts = []
+  const appTextViews = [<OscText />, <RickText />, <ShowdownText />]
+  for (let i = 0; i < 3; i++) {
+    appTexts.push(
+      <SwiperSlide className="slider" key={`slide-${i}`}>
+        {appTextViews[i]}
       </SwiperSlide>
     )
   }
@@ -79,20 +95,23 @@ function App() {
       <div id="cube-1">
         <p className="cube-title">Apps</p>
         <React.Fragment>
-          <Swiper id="main"
+          <Swiper 
+            id="main"
+            onSwiper={setFirstSwiper}
+            controller={{ control: secondSwiper }}
             navigation
-            // pagination
             effect="cube"
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 0,
-              shadowScale: 0.94,
-            }}
-            // loop={true}
             spaceBetween={0}
             slidesPerView={1}>
-            {slides1}
+            {appPics}
+          </Swiper>
+          <Swiper 
+            id="main" 
+            onSwiper={setSecondSwiper}
+            controller={{ control: firstSwiper }}
+            spaceBetween={0}
+            slidesPerView={1}>
+            {appTexts}
           </Swiper>
         </React.Fragment>
       </div>
@@ -101,15 +120,7 @@ function App() {
         <React.Fragment>
           <Swiper id="main"
             navigation
-            // pagination
             effect="cube"
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 0,
-              shadowScale: 0.94,
-            }}
-            // loop={true}
             spaceBetween={0}
             slidesPerView={1}>
             {slides2}

@@ -56,6 +56,7 @@ body{
 }
 
 .about{
+
   font-size: 3vmin;
   color: black;
 }
@@ -151,10 +152,6 @@ body{
   width: 100vw;
   text-align: center;
 }
-
-/* #contact-info{
-  color: gold;
-} */
 
 /* Fonts */
 
