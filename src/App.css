@@ -56,16 +56,18 @@ body{
 }
 
 .about{
-
   font-size: 3vmin;
   color: black;
 }
 
 /* ID's */
 
-#nav{
+.nav{
   font-size: 4vmin;
   padding-left: 2vw;
+  /* position: sticky;
+  top: 0;
+  z-index: 1; */
 }
 
 #main{

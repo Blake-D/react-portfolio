@@ -16,9 +16,7 @@ import EscapeText from './components/EscapeText'
 import BioPlunge from './components/BioPlunge'
 import BioText from './components/BioText'
 import Portrait from './images/portrait.jpg'
-import LinkedIn from './images/linkedin_icon.png'
-import GitHub from './images/github_icon.png'
-import Resume from './Blake_DeGraw_resume.pdf'
+import Header from './components/Header'
 
 SwiperCore.use([Navigation, EffectCube, Controller])
 
@@ -75,9 +73,7 @@ function App() {
 
   return (
     <body>
-      <div id="nav">
-      <a href="https://www.linkedin.com/in/blake-degraw/" target="_blank" rel="noreferrer"><img className="icon" src={LinkedIn} alt="linkedIn icon" /></a> <a href="https://github.com/Blake-D" target="_blank" rel="noreferrer"><img className="icon" src={GitHub} alt="GitHub icon" /></a> <a href="#cube-1">apps</a> | <a href="#cube-2">games</a> | <a id="contact-info" href={Resume} target="_blank" rel="noreferrer">resume</a>
-      </div>
+      <Header />
       <div className="first-name">
         <p>Blake</p>
       </div>
@@ -110,7 +106,7 @@ function App() {
       <div id="cube-1">
         <p className="cube-title">Apps</p>
         <React.Fragment>
-          <Swiper 
+          <Swiper
             id="main"
             onSwiper={setFirstSwiper}
             controller={{ control: secondSwiper }}
@@ -120,8 +116,8 @@ function App() {
             slidesPerView={1}>
             {appPics}
           </Swiper>
-          <Swiper 
-            id="main-2" 
+          <Swiper
+            id="main-2"
             onSwiper={setSecondSwiper}
             controller={{ control: firstSwiper }}
             spaceBetween={0}
@@ -142,8 +138,8 @@ function App() {
             slidesPerView={1}>
             {gamePics}
           </Swiper>
-          <Swiper 
-            id="main-2" 
+          <Swiper
+            id="main-2"
             onSwiper={setFourthSwiper}
             controller={{ control: thirdSwiper }}
             spaceBetween={0}
