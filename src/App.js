@@ -81,7 +81,7 @@ function App() {
         <p>DeGraw</p>
       </div>
       <div id="blurb">
-        <p><span id="fade-in-one">software engineer</span> | <span id="fade-in-two">game developer</span> | <span id="fade-in-three">audio artist</span></p>
+        <p><span id="fade-in-one">software engineer | </span> <span id="fade-in-two">game developer | </span> <span id="fade-in-three">audio artist</span></p>
       </div>
       <div id="ribbon"></div>
       <div id="about-container">

@@ -62,15 +62,6 @@ body{
 
 /* ID's */
 
-#nav{
-  font-size: 3vmin;
-  padding-top: 1vh;
-  padding-left: 2vw;
-  /* position: sticky;
-  top: 0;
-  z-index: 1; */
-}
-
 #main{
   width: 80vw;
   height: auto;
@@ -185,14 +176,75 @@ body{
 
 /* Stuff with animations */
 
+#nav{
+  font-size: 3vmin;
+  padding-top: 1vh;
+  padding-left: 2vw;
+  margin-bottom: 5vh;
+  /* position: sticky;
+  top: 0;
+  z-index: 1; */
+  animation: nav-fade ease 3s;
+  -webkit-animation: nav-fade ease 3s;
+  -moz-animation: nav-fade ease 3s;
+  -o-animation: nav-fade ease 3s;
+  -ms-animation: nav-fade ease 3s;
+}
+
+@keyframes nav-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes nav-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes nav-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes nav-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes nav-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .first-name{
   padding-top: 10vh;
   padding-right: 2vw;
+  margin-bottom: 15vh;
   height: 100px;
 }
 
 .first-name p{
-  font-size: 30vmin;
+  font-size: 50vmin;
   position: relative;
   width: 100%;
   height: 100%;
@@ -232,10 +284,11 @@ body{
   padding-top: 10vh;
   padding-right: 2vw;
   height: 100px;
+  margin-bottom: 15vh;
 }
 
 .last-name p{
-  font-size: 30vmin;
+  font-size: 50vmin;
   position: relative;
   width: 100%;
   height: 100%;
@@ -429,3 +482,9 @@ body{
     opacity:1;
   }
 }
+
+/* mobile styling */
+
+/* @media only screen and (max-width: 900px) {
+  
+} */
