@@ -42,7 +42,7 @@ body{
 }
 
 .icon{
-  height: 6vmin;
+  height: 5vmin;
   width: auto;
 }
 
@@ -62,8 +62,9 @@ body{
 
 /* ID's */
 
-.nav{
-  font-size: 4vmin;
+#nav{
+  font-size: 3vmin;
+  padding-top: 1vh;
   padding-left: 2vw;
   /* position: sticky;
   top: 0;
