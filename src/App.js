@@ -76,7 +76,7 @@ function App() {
   return (
     <body>
       <div id="nav">
-        <a href="#cube-1">apps</a> | <a href="#cube-2">games</a>
+      <a href="https://www.linkedin.com/in/blake-degraw/" target="_blank" rel="noreferrer"><img className="icon" src={LinkedIn} alt="linkedIn icon" /></a> <a href="https://github.com/Blake-D" target="_blank" rel="noreferrer"><img className="icon" src={GitHub} alt="GitHub icon" /></a> <a href="#cube-1">apps</a> | <a href="#cube-2">games</a> | <a id="contact-info" href={Resume} target="_blank" rel="noreferrer">resume</a>
       </div>
       <div className="first-name">
         <p>Blake</p>
@@ -151,17 +151,6 @@ function App() {
             {gameTexts}
           </Swiper>
         </React.Fragment>
-      </div>
-      <div id="footer">
-        <div id="link-icons">
-          <div id="icon-left">
-            <a href="https://www.linkedin.com/in/blake-degraw/" target="_blank" rel="noreferrer"><img className="icon" src={LinkedIn} alt="linkedIn icon" /></a>
-          </div>
-          <div id="icon-right">
-            <a href="https://github.com/Blake-D" target="_blank" rel="noreferrer"><img className="icon" src={GitHub} alt="GitHub icon" /></a>
-          </div>
-          <a id="contact-info" href={Resume} target="_blank" rel="noreferrer">resume</a> |  <a id="contact-info" href="mailto:bbdegraw@gmail.com" target="_blank" rel="noreferrer">bbdegraw@gmail.com</a>
-        </div>
       </div>
     </body>
   )
