@@ -149,11 +149,6 @@ body{
   -ms-animation: fadeIn ease 10s; */
  }
 
-#footer{
-  width: 100vw;
-  text-align: center;
-}
-
 /* Fonts */
 
 .eurostile{
@@ -485,6 +480,41 @@ body{
 
 /* mobile styling */
 
-/* @media only screen and (max-width: 900px) {
-  
-} */
+@media only screen and (max-width: 900px) {
+  .first-name p{
+    font-size: 20vmin;
+    position: relative;
+    text-align: left;
+    /* width: 100%;
+    height: 100%; */
+  }
+
+  .first-name{
+    padding-top: 2vh;
+    padding-left: 2vw;
+    margin-bottom: 0vh;
+    height: 60px;
+  }
+
+  .last-name p{
+    font-size: 20vmin;
+    position: relative;
+    text-align: left;
+    /* width: 100%;
+    height: 100%; */
+  }
+
+  .last-name{
+    padding-top: 0vh;
+    padding-left: 2vw;
+    margin-bottom: 0vh;
+    height: 60px;
+  }
+
+  #nav{
+    font-size: 3vmin;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    margin-bottom: 1vh;
+  }
+}
