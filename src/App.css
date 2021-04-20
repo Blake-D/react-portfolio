@@ -10,6 +10,10 @@ a:hover{
 
 /* Classes */
 
+.alt-cube{
+  display: none;
+}
+
 .cube-link{
   color: black;
 }
@@ -591,15 +595,19 @@ a:hover{
     width: 100vw;
   }
 
-  #main-2{
-    display: none;
-  }
-
   .cube-div{
     text-align: center;
   }
 
   .cube-title{
     margin-top: 3vh;
+  }
+
+  .prime-cube{
+    display: none;
+  }
+
+  .alt-cube{
+    display: block;
   }
 }

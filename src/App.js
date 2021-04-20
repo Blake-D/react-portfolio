@@ -5,6 +5,7 @@ import './App.css'
 import 'swiper/swiper-bundle.css'
 import Oscillator from './components/Oscillator'
 import OscText from './components/OscText'
+import OscMobile from './components/OscMobile'
 import Rickipedia from './components/Rickipedia'
 import RickText from './components/RickText'
 import Showdown from './components/Showdown'
@@ -47,6 +48,16 @@ function App() {
     appTexts.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
         {appTextViews[i]}
+      </SwiperSlide>
+    )
+  }
+
+  const appMobiles = []
+  const appMobileViews = [<OscMobile />, <Rickipedia />, <Showdown />]
+  for (let i = 0; i < 3; i++) {
+    appMobiles.push(
+      <SwiperSlide className="slider" key={`slide-${i}`}>
+        {appMobileViews[i]}
       </SwiperSlide>
     )
   }
@@ -101,7 +112,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="cube-1">
+      <div id="cube-1" className="prime-cube">
         <p className="cube-title">Apps</p>
         <React.Fragment>
           <Swiper
@@ -121,6 +132,21 @@ function App() {
             spaceBetween={0}
             slidesPerView={1}>
             {appTexts}
+          </Swiper>
+        </React.Fragment>
+      </div>
+      <div id="cube-1" className="alt-cube">
+        <p className="cube-title">Apps</p>
+        <React.Fragment>
+          <Swiper
+            id="main"
+            onSwiper={setFirstSwiper}
+            controller={{ control: secondSwiper }}
+            navigation
+            effect="cube"
+            spaceBetween={0}
+            slidesPerView={1}>
+            {appMobiles}
           </Swiper>
         </React.Fragment>
       </div>
