@@ -95,11 +95,10 @@ function App() {
           </div>
           <br></br>
           <div id="tech-stacks">
-            JavaScript <b>|</b> ES6 <br></br>
-            Python <b>|</b> Flask <br></br>
-            HTML5 <b>|</b> CSS <b>|</b> Bootstrap <b>|</b> Responsive Web Design <br></br>
-            React <b>|</b> Next <b>|</b> Node <b>|</b> Express <b>|</b> EJS <b>|</b> RESTful Routing <br></br>
-            SQL <b>|</b> PostgreSQL <b>|</b> Sequelize <b>|</b> MongoDB <b>|</b> Mongoose <b>|</b> Atlas
+            JavaScript <b>|</b> Python <b>|</b> PHP <b>|</b> HTML <b>|</b> CSS <br></br>
+            React <b>|</b> Next <b>|</b> Node <b>|</b> Express <b>|</b> EJS <b>|</b> Flask <br></br>
+            SQL <b>|</b> PostgreSQL <b>|</b> Sequelize <b>|</b> MongoDB <b>|</b> Mongoose <b>|</b> Atlas <br></br>
+            JSON <b>|</b> Responsive Design <b>|</b> RESTful Routing
           </div>
         </div>
       </div>
