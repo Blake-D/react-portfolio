@@ -98,7 +98,6 @@ function App() {
             JavaScript <b>|</b> Python <b>|</b> PHP <b>|</b> HTML <b>|</b> CSS <br></br>
             React <b>|</b> Next <b>|</b> Node <b>|</b> Express <b>|</b> EJS <b>|</b> Flask <br></br>
             SQL <b>|</b> PostgreSQL <b>|</b> Sequelize <b>|</b> MongoDB <b>|</b> Mongoose <b>|</b> Atlas <br></br>
-            JSON <b>|</b> Responsive Design <b>|</b> RESTful Routing
           </div>
         </div>
       </div>
