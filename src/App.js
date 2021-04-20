@@ -72,7 +72,7 @@ function App() {
   }
 
   return (
-    <body>
+    <div id="body">
       <Header />
       <div className="first-name">
         <p>Blake</p>
@@ -146,7 +146,7 @@ function App() {
           </Swiper>
         </React.Fragment>
       </div>
-    </body>
+    </div>
   )
 }
 

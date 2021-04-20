@@ -8,11 +8,6 @@ a:hover{
   text-decoration: underline;
 }
 
-body{
-  background-color: white;
-  color: rgb(79, 79, 83);
-}
-
 /* Classes */
 
 .cube-link{
@@ -61,6 +56,11 @@ body{
 }
 
 /* ID's */
+
+#body{
+  background-color: white;
+  color: rgb(79, 79, 83);
+}
 
 #main{
   width: 80vw;
@@ -585,5 +585,9 @@ body{
   #tech-stacks{
     margin-top: 0vh;
     text-align: center;
+  }
+
+  #main.swiper-container{
+    width: 100vw;
   }
 }
