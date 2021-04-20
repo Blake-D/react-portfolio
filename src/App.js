@@ -155,8 +155,8 @@ function App() {
         <React.Fragment>
           <Swiper
             id="main"
-            onSwiper={setFirstSwiper}
-            controller={{ control: secondSwiper }}
+            // onSwiper={setFirstSwiper}
+            // controller={{ control: secondSwiper }}
             navigation
             effect="cube"
             spaceBetween={0}
@@ -191,8 +191,8 @@ function App() {
         <p className="cube-title">Video Games</p>
         <React.Fragment>
           <Swiper id="main"
-            onSwiper={setThirdSwiper}
-            controller={{ control: fourthSwiper }}
+            // onSwiper={setThirdSwiper}
+            // controller={{ control: fourthSwiper }}
             navigation
             effect="cube"
             spaceBetween={0}

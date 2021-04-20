@@ -536,7 +536,7 @@ a:hover{
 
   #main{
     width: 80vw;
-    height: auto;
+    height: 55vh;
     margin-left: 0vw;
     margin-right: 0vw;
   }
@@ -554,6 +554,8 @@ a:hover{
   }
   
   #cube-2{
+    /* color: white;
+    background-color: rgb(79, 79, 83); */
     text-align: center;
     width: 80px;
     margin-bottom: 10vh;
@@ -568,13 +570,13 @@ a:hover{
     box-shadow: -10px 5px 5px gray;
     border-radius: 25px;
     width: 90vw;
-    margin-left: 3vw;
+    margin-left: 5vw;
     height: auto;
     position: relative;
   }
 
   #about-container{
-    padding-left: 2vw;
+    padding-left: 0vw;
     display: flex;
     flex-direction: column;
     padding-top: 0vh;
@@ -596,7 +598,14 @@ a:hover{
   }
 
   .cube-div{
+    width: auto;
     text-align: center;
+    color: white;
+    background-color: rgb(79, 79, 83);
+  }
+
+  .about{
+    color: white;
   }
 
   .cube-title{
@@ -609,5 +618,9 @@ a:hover{
 
   .alt-cube{
     display: block;
+  }
+
+  .cube-link{
+    color: white;
   }
 }
