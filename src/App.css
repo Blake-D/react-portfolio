@@ -590,4 +590,16 @@ a:hover{
   #main.swiper-container{
     width: 100vw;
   }
+
+  #main-2{
+    display: none;
+  }
+
+  .cube-div{
+    text-align: center;
+  }
+
+  .cube-title{
+    margin-top: 3vh;
+  }
 }
