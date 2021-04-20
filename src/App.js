@@ -8,14 +8,19 @@ import OscText from './components/OscText'
 import OscMobile from './components/OscMobile'
 import Rickipedia from './components/Rickipedia'
 import RickText from './components/RickText'
+import RickMobile from './components/RickMobile'
 import Showdown from './components/Showdown'
 import ShowdownText from './components/ShowdownText'
+import ShowdownMobile from './components/ShowdownMobile'
 import Prodrome from './components/Prodrome'
 import ProText from './components/ProText'
+import ProMobile from './components/ProMobile'
 import Escape from './components/Escape'
 import EscapeText from './components/EscapeText'
+import EscapeMobile from './components/EscapeMobile'
 import BioPlunge from './components/BioPlunge'
 import BioText from './components/BioText'
+import BioMobile from './components/BioMobile'
 import Portrait from './images/portrait.jpg'
 import Header from './components/Header'
 
@@ -53,7 +58,7 @@ function App() {
   }
 
   const appMobiles = []
-  const appMobileViews = [<OscMobile />, <Rickipedia />, <Showdown />]
+  const appMobileViews = [<OscMobile />, <RickMobile />, <ShowdownMobile />]
   for (let i = 0; i < 3; i++) {
     appMobiles.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
@@ -78,6 +83,16 @@ function App() {
     gameTexts.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
         {gameTextViews[i]}
+      </SwiperSlide>
+    )
+  }
+
+  const gameMobiles = []
+  const gameMobileViews = [<ProMobile />, <EscapeMobile />, <BioMobile />]
+  for (let i = 0; i < 3; i++) {
+    gameMobiles.push(
+      <SwiperSlide className="slider" key={`slide-${i}`}>
+        {gameMobileViews[i]}
       </SwiperSlide>
     )
   }
@@ -150,7 +165,7 @@ function App() {
           </Swiper>
         </React.Fragment>
       </div>
-      <div id="cube-2">
+      <div id="cube-2" className="prime-cube">
         <p className="cube-title">Video Games</p>
         <React.Fragment>
           <Swiper id="main"
@@ -169,6 +184,20 @@ function App() {
             spaceBetween={0}
             slidesPerView={1}>
             {gameTexts}
+          </Swiper>
+        </React.Fragment>
+      </div>
+      <div id="cube-2" className="alt-cube">
+        <p className="cube-title">Video Games</p>
+        <React.Fragment>
+          <Swiper id="main"
+            onSwiper={setThirdSwiper}
+            controller={{ control: fourthSwiper }}
+            navigation
+            effect="cube"
+            spaceBetween={0}
+            slidesPerView={1}>
+            {gameMobiles}
           </Swiper>
         </React.Fragment>
       </div>
