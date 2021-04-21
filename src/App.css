@@ -61,10 +61,6 @@ a:hover{
 
 /* ID's */
 
-#nav-mobile{
-  display: none;
-}
-
 #body{
   background-color: white;
   color: rgb(79, 79, 83);
@@ -231,6 +227,64 @@ a:hover{
 }
 
 @-ms-keyframes nav-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#nav-mobile{
+  display: none;
+  font-size: 3vmin;
+  padding-top: 1vh;
+  padding-left: 2vw;
+  margin-bottom: 5vh;
+  animation: nav-mobile-fade ease 3s;
+  -webkit-animation: nav-mobile-fade ease 3s;
+  -moz-animation: nav-mobile-fade ease 3s;
+  -o-animation: nav-mobile-fade ease 3s;
+  -ms-animation: nav-mobile-fade ease 3s;
+}
+
+@keyframes nav-mobile-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes nav-mobile-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes nav-mobile-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes nav-mobile-fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes nav-mobile-fade {
   0% {
     opacity:0;
   }
