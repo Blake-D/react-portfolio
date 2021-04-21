@@ -61,6 +61,10 @@ a:hover{
 
 /* ID's */
 
+#nav-mobile{
+  display: none;
+}
+
 #body{
   background-color: white;
   color: rgb(79, 79, 83);
@@ -488,7 +492,7 @@ a:hover{
   .first-name p{
     font-size: 20vmin;
     position: relative;
-    text-align: left;
+    text-align: right;
     /* width: 100%;
     height: 100%; */
   }
@@ -503,7 +507,7 @@ a:hover{
   .last-name p{
     font-size: 20vmin;
     position: relative;
-    text-align: left;
+    text-align: right;
     /* width: 100%;
     height: 100%; */
   }
@@ -516,6 +520,11 @@ a:hover{
   }
 
   #nav{
+    display: none;
+  }
+
+  #nav-mobile{
+    display: block;
     background-color: rgb(79, 79, 83);
     font-size: 3vmin;
     padding-top: 1vh;

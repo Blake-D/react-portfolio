@@ -23,6 +23,7 @@ import BioText from './components/BioText'
 import BioMobile from './components/BioMobile'
 import Portrait from './images/portrait.jpg'
 import Header from './components/Header'
+import HeaderMobile from './components/HeaderMobile'
 
 SwiperCore.use([Navigation, EffectCube, Controller])
 
@@ -100,6 +101,7 @@ function App() {
   return (
     <div id="body">
       <Header />
+      <HeaderMobile />
       <div className="first-name">
         <p>Blake</p>
       </div>
