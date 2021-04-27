@@ -12,6 +12,8 @@ import RickMobile from './components/RickMobile'
 import Showdown from './components/Showdown'
 import ShowdownText from './components/ShowdownText'
 import ShowdownMobile from './components/ShowdownMobile'
+import Matrix from './components/Matrix'
+import MatrixText from './components/MatrixText'
 import Prodrome from './components/Prodrome'
 import ProText from './components/ProText'
 import ProMobile from './components/ProMobile'
@@ -39,8 +41,8 @@ function App() {
   const [fourthSwiper, setFourthSwiper] = useState(null)
 
   const appPics = []
-  const appPicViews = [<Oscillator />, <Rickipedia />, <Showdown />]
-  for (let i = 0; i < 3; i++) {
+  const appPicViews = [<Oscillator />, <Rickipedia />, <Showdown />, <Matrix />]
+  for (let i = 0; i < 4; i++) {
     appPics.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
         {appPicViews[i]}
@@ -49,8 +51,8 @@ function App() {
   }
 
   const appTexts = []
-  const appTextViews = [<OscText />, <RickText />, <ShowdownText />]
-  for (let i = 0; i < 3; i++) {
+  const appTextViews = [<OscText />, <RickText />, <ShowdownText />, <MatrixText />]
+  for (let i = 0; i < 4; i++) {
     appTexts.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
         {appTextViews[i]}
