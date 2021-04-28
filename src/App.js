@@ -14,6 +14,7 @@ import ShowdownText from './components/ShowdownText'
 import ShowdownMobile from './components/ShowdownMobile'
 import Matrix from './components/Matrix'
 import MatrixText from './components/MatrixText'
+import MatrixMobile from './components/MatrixMobile'
 import Prodrome from './components/Prodrome'
 import ProText from './components/ProText'
 import ProMobile from './components/ProMobile'
@@ -61,8 +62,8 @@ function App() {
   }
 
   const appMobiles = []
-  const appMobileViews = [<OscMobile />, <RickMobile />, <ShowdownMobile />]
-  for (let i = 0; i < 3; i++) {
+  const appMobileViews = [<OscMobile />, <RickMobile />, <ShowdownMobile />, <MatrixMobile />]
+  for (let i = 0; i < 4; i++) {
     appMobiles.push(
       <SwiperSlide className="slider" key={`slide-${i}`}>
         {appMobileViews[i]}
